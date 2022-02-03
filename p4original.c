@@ -18,7 +18,8 @@ void input_array(int n, int a[n])
 }
 int sum_n_arrays(int n, int a[n])
 {
-  int i,sum=0;
+  int i;
+  int sum=0;
   for( i=0;i<n;i++)
   {
     sum=sum+a[i];
@@ -35,9 +36,9 @@ void out_put(int n, int a[n], int sum)
 }
 int main()
 {
-  int x,y,n;
+  int x,y;
   x=input_array_size();
-  int a[n];
+  int a[x];
   input_array(x,a);
   y=sum_n_arrays(x,a);
   out_put(x,a,y);
